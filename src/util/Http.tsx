@@ -4,12 +4,12 @@ import axios, { AxiosError, AxiosRequestConfig } from "axios";
 // this instance will be used throughout the app
 
 const options = {
-  baseURL: import.meta.env.VITE_BASE_URL,
+  baseURL: "https://newsapi.org/v2/",
   timeout: 1000,
   headers: { Authorization: `Bearer ${import.meta.env.VITE_API_KEY}` },
   proxy: {
     protocol: "https",
-    host: "rxt-news.vercel.app/",
+    host: "https://newsapi.org/v2/",
     port: 443,
   },
 };
