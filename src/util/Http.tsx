@@ -4,7 +4,7 @@ import axios, { AxiosError, AxiosRequestConfig } from "axios";
 // this instance will be used throughout the app
 
 const options = {
-  baseURL: import.meta.env.BASE_URL,
+  baseURL: import.meta.env.VITE_BASE_URL,
   timeout: 1000,
   headers: { Authorization: `Bearer ${import.meta.env.VITE_API_KEY}` },
 };
