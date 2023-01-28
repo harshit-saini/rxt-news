@@ -7,6 +7,11 @@ const options = {
   baseURL: import.meta.env.VITE_BASE_URL,
   timeout: 1000,
   headers: { Authorization: `Bearer ${import.meta.env.VITE_API_KEY}` },
+  proxy: {
+    protocol: "https",
+    host: "rxt-news.vercel.app/",
+    port: 443,
+  },
 };
 
 const Http = axios.create(options);
