@@ -6,10 +6,12 @@ import axios, { AxiosError, AxiosRequestConfig } from "axios";
 const options = {
   baseURL: "https://newsapi.org/v2/",
   timeout: 1000,
-  headers: { Authorization: `Bearer ${import.meta.env.VITE_API_KEY}` },
+  headers: {
+    Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
+  },
   proxy: {
     protocol: "https",
-    host: "https://newsapi.org/v2/",
+    host: "https://cors-anywhere.herokuapp.com/",
     port: 443,
   },
 };
